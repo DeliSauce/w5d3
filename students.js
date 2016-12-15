@@ -17,7 +17,7 @@ Student.prototype.courses = function(){
 };
 
 Student.prototype.enroll = function(course){
-  if (!this.courses.includes(course)) {
+  if(!this.courses.includes(course)) {
     this.courses.push(course);
     course.students.push(this);
 
